@@ -1,10 +1,16 @@
 {
   "name": "kiwiui-react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": "dist/kiwiui-react.umd.js",
   "module": "dist/kiwiui-react.es.js",
   "types": "dist/index.d.ts",
   "files": ["dist"],
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
   "exports": {
     ".": {
       "import": "./dist/kiwiui-react.es.js",
