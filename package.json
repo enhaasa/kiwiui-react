@@ -1,0 +1,22 @@
+{
+  "name": "kiwiui-react",
+  "version": "0.1.0",
+  "main": "dist/kiwiui-react.umd.js",
+  "module": "dist/kiwiui-react.es.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "exports": {
+    ".": {
+      "import": "./dist/kiwiui-react.es.js",
+      "require": "./dist/kiwiui-react.umd.js"
+    }
+  },
+  "peerDependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "dependencies": {
+    "gsap": "^3.0.0"
+  },
+  "type": "module"
+}
