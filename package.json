@@ -1,13 +1,12 @@
 {
-  "name": "kiwiui-react",
-  "version": "0.1.3",
-  "private": false,
-  "publishConfig": {
-    "access": "restricted"
-  },
+  "name": "@enhasa/kiwiui-react",
+  "version": "0.1.2",
   "type": "module",
-  "description": "A lightweight React UI utilities package",
-  "author": "Your Name",
+  "publishConfig": {
+    "access": "public"
+  },
+  "description": "Kiwi UI stuff",
+  "author": "Enhasa",
   "license": "MIT",
   "main": "dist/kiwiui-react.umd.js",
   "module": "dist/kiwiui-react.es.js",
@@ -17,6 +16,7 @@
   ],
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/kiwiui-react.es.js",
       "require": "./dist/kiwiui-react.umd.js"
     }
@@ -27,6 +27,7 @@
     "lint": "eslint .",
     "preview": "vite preview"
   },
+  
   "peerDependencies": {
     "react": "^18.0.0 || ^19.0.0",
     "react-dom": "^18.0.0 || ^19.0.0"
