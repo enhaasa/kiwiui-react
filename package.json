@@ -1,28 +1,48 @@
 {
   "name": "kiwiui-react",
-  "version": "0.1.1",
+  "version": "0.1.2",
+  "type": "module",
+  "description": "A lightweight React UI utilities package",
+  "author": "Your Name",
+  "license": "MIT",
   "main": "dist/kiwiui-react.umd.js",
   "module": "dist/kiwiui-react.es.js",
   "types": "dist/index.d.ts",
-  "files": ["dist"],
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "lint": "eslint .",
-    "preview": "vite preview"
-  },
+  "files": [
+    "dist"
+  ],
   "exports": {
     ".": {
       "import": "./dist/kiwiui-react.es.js",
       "require": "./dist/kiwiui-react.umd.js"
     }
   },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
   "peerDependencies": {
-    "react": "^18.0.0",
-    "react-dom": "^18.0.0"
+    "react": "^18.0.0 || ^19.0.0",
+    "react-dom": "^18.0.0 || ^19.0.0"
   },
   "dependencies": {
-    "gsap": "^3.0.0"
+    "gsap": "^3.13.0"
   },
-  "type": "module"
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/node": "^22.15.12",
+    "@types/react": "^19.0.10",
+    "@types/react-dom": "^19.0.4",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.22.0",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-react-refresh": "^0.4.19",
+    "globals": "^16.0.0",
+    "tslib": "^2.8.1",
+    "typescript": "~5.7.2",
+    "typescript-eslint": "^8.26.1",
+    "vite": "^6.3.4"
+  }
 }
